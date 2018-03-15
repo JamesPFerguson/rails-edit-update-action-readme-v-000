@@ -24,7 +24,7 @@ class PostsController < ApplicationController
 	end
 
 	def update
-		 raise params.inspect
+		 @post = Post.find(params[:id])
 	end
 
 
